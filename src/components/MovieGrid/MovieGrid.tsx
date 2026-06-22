@@ -13,7 +13,7 @@ export default function MovieGrid({ movies, onSelect }: MovieGridProps) {
     <ul className={css.grid}>
       {movies.map((movie) => {
         const imageUrl = movie.poster_path
-          ? `https://tmdb.org{movie.poster_path}`
+          ? `https://tmdb.org${movie.poster_path}`
           : "https://placeholder.com";
 
         return (

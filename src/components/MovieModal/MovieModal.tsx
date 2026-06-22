@@ -39,7 +39,7 @@ export default function MovieModal({ movie, onClose }: MovieModalProps) {
   if (!modalRoot) return null;
 
   const backdropUrl = movie.backdrop_path
-    ? `https://tmdb.org{movie.backdrop_path}`
+    ? `https://tmdb.org${movie.backdrop_path}`
     : "https://placeholder.com";
 
   return createPortal(
