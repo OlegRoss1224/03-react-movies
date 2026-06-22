@@ -8,7 +8,7 @@ export interface TmdbResponse {
   total_results: number;
 }
 
-const BASE_URL = "https://themoviedb.org";
+const BASE_URL = "https://api.themoviedb.org/3";
 
 const TMDB_TOKEN = import.meta.env.VITE_TMDB_TOKEN;
 
